@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -26,9 +27,11 @@ export default function Home() {
       </Head>
 
       <header id="header" className="alt">
-        <a href="index.html" className="logo">
-          <strong>Forty</strong> <span>by HTML5 UP</span>
-        </a>
+        <Link href="/">
+          <a className="logo">
+            <strong>Forty</strong> <span>by HTML5 UP</span>
+          </a>
+        </Link>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
@@ -37,16 +40,24 @@ export default function Home() {
       <nav id="menu">
         <ul className="links">
           <li>
-            <a href="index.html">Home</a>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="landing.html">Landing</a>
+            <Link href="/landing">
+              <a>Landing</a>
+            </Link>
           </li>
           <li>
-            <a href="generic.html">Generic</a>
+            <Link href="/generic">
+              <a>Generic</a>
+            </Link>
           </li>
           <li>
-            <a href="elements.html">Elements</a>
+            <Link href="/elements">
+              <a>Elements</a>
+            </Link>
           </li>
         </ul>
         <ul className="actions stacked">
@@ -93,9 +104,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Aliquam
-                </a>
+                <Link href="/landing">
+                  <a className="link">Aliquam</a>
+                </Link>
               </h3>
               <p>Ipsum dolor sit amet</p>
             </header>
@@ -106,9 +117,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Tempus
-                </a>
+                <Link href="/landing">
+                  <a className="link">Tempus</a>
+                </Link>
               </h3>
               <p>feugiat amet tempus</p>
             </header>
@@ -119,9 +130,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Magna
-                </a>
+                <Link href="/landing">
+                  <a className="link">Magna</a>
+                </Link>
               </h3>
               <p>Lorem etiam nullam</p>
             </header>
@@ -132,9 +143,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Ipsum
-                </a>
+                <Link href="/landing">
+                  <a className="link">Ipsum</a>
+                </Link>
               </h3>
               <p>Nisl sed aliquam</p>
             </header>
@@ -145,9 +156,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Consequat
-                </a>
+                <Link href="/landing">
+                  <a className="link">Consequat</a>
+                </Link>
               </h3>
               <p>Ipsum dolor sit amet</p>
             </header>
@@ -158,9 +169,9 @@ export default function Home() {
             </span>
             <header className="major">
               <h3>
-                <a href="landing.html" className="link">
-                  Etiam
-                </a>
+                <Link href="/landing">
+                  <a className="link">Etiam</a>
+                </Link>
               </h3>
               <p>Feugiat amet tempus</p>
             </header>
@@ -183,9 +194,9 @@ export default function Home() {
             </p>
             <ul className="actions">
               <li>
-                <a href="landing.html" className="button next">
-                  Get Started
-                </a>
+                <Link href="/landing">
+                  <a className="button next">Get Started</a>
+                </Link>
               </li>
             </ul>
           </div>
