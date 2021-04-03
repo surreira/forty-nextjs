@@ -22,14 +22,16 @@ export default function Landing() {
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
-        <title>Forty by HTML5 UP</title>
+        <title>Landing - Forty by HTML5 UP</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header id="header" class="alt style2">
-        <a href="index.html" class="logo">
-          <strong>Forty</strong> <span>by HTML5 UP</span>
-        </a>
+        <Link href="/">
+          <a class="logo">
+            <strong>Forty</strong> <span>by HTML5 UP</span>
+          </a>
+        </Link>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
